@@ -51,3 +51,8 @@ public class CheckLeapYear {
 // int로 바로 바꿀꺼기 때문에 처음에 br.readLine은 input으로 임시로 받았고 바로 input을 
 // parseInt로 int타입으로 바꿔주었음 입력을 숫자로 받을꺼기 때문에
 // 그리고 조건문과 and 문 or 문 사용하여 문제를 풀었음
+
+// AI 핵심 요약
+// BufferedReader: 입력을 모았다가 한꺼번에 전달해서 속도가 빠름
+// Integer.parseInt: "2024" 문자열을 산술 연산이 가능한 2024 숫자로 변환
+// try-catch: 예외(Error)가 발생해도 프로그램이 튕기지 않게 방어함
