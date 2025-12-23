@@ -13,14 +13,14 @@ public class SumUpToN {
         String line = bf.readLine();
         int n = parseInt(line);
         int hap = 0;
-//
-//        for (int i = 1; i <= n; i++) {
-//            hap = hap + i;
-//        }
-//        System.out.println(hap);
 
-        hap = n * (n + 1 ) / 2;
+        for (int i = 1; i <= n; i++) {
+            hap = hap + i;
+        }
         System.out.println(hap);
+
+//        hap = n * (n + 1 ) / 2;
+//        System.out.println(hap);
     }
 }
 
