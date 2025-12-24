@@ -1,27 +1,22 @@
 package test_10952;
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.util.StringTokenizer;
+import java.util.Scanner;
 
 public class APlusBMinusFive {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
 
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-        String line = bf.readLine();
+        while (true) {
+            int A  = sc.nextInt();
+            int B  = sc.nextInt();
 
-        StringTokenizer st =  new StringTokenizer(line);
-        int N = Integer.parseInt(st.nextToken());
-        int X = Integer.parseInt(st.nextToken());
-        String readLine = bf.readLine();
-        StringTokenizer number =  new StringTokenizer(readLine);
+            if (A == 0 && B == 0) break;
 
-        for (int i = 0; i < N; i++) {
-            int c = Integer.parseInt(number.nextToken());
-            if ( c < X ) {
-                System.out.print(c + " ");
-            }
+            int result = A + B;
+            System.out.println(result);
         }
+
     }
 }
+
+// 풀어준것 내가 직접푼것 x
