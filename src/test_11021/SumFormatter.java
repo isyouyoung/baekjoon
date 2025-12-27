@@ -1,9 +1,23 @@
 package test_11021;
 
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
+import java.util.StringTokenizer;
+
 public class SumFormatter {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IOException {
 
+        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        int T = Integer.parseInt(bf.readLine());
 
+        for (int i = 0; i < T; i++) {
+            String Line = bf.readLine();
+            StringTokenizer st = new StringTokenizer(Line);
+            int A = Integer.parseInt(st.nextToken());
+            int B = Integer.parseInt(st.nextToken());
+            System.out.println("Case #" + (i+1) + ": " + (A+B));
+        }
     }
 }
 
@@ -19,3 +33,6 @@ public class SumFormatter {
 // AI 검증
 // 네, 흐름은 아주 완벽합니다! 틀린 부분은 전혀 없으며, 오히려 입출력 성능까지 고려한 아주 수준 높은 접근 방식입니다.
 // 다행임 직접 만들어볼 예정
+
+// 후기 AI에 검증을 받긴 했지만 다 풀었다..! 굿
+// 다만 Integer를 써야하는건 아는대 어캐쓰는지 기억이안나서 그걸 물어봤다;;;...
