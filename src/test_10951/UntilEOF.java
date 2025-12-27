@@ -12,7 +12,7 @@ public class UntilEOF {
 
         while (true) {
             String line = bf.readLine();
-            if (line == null) { break; }
+            if (line == null || line.isEmpty()) { break; }
                 StringTokenizer st = new StringTokenizer(line);
                 int A = Integer.parseInt(st.nextToken());
                 int B = Integer.parseInt(st.nextToken());
