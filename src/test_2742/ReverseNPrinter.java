@@ -11,7 +11,7 @@ public class ReverseNPrinter {
         String line = bf.readLine();
         int N = Integer.parseInt(line);
 
-        for (int i=1; i <= N; i++) {
+        for (int i=N; i >= 1; i--) {
             System.out.println(i);
         }
 
