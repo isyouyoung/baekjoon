@@ -12,10 +12,10 @@ public class BigSum {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int result = 0;
+        long result = 0;
 
         while (st.hasMoreTokens()) {
-            result += Integer.parseInt(st.nextToken());
+            result += Long.parseLong(st.nextToken());
         }
 
         System.out.println(result);
