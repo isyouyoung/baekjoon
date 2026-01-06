@@ -8,11 +8,9 @@ import java.util.StringTokenizer;
 public class UntilEOF {
     public static void main(String[] args) throws IOException {
 
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
-
-        while (true) {
-            String line = bf.readLine();
-            if (line == null || line.isEmpty()) { break; }
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String line;
+        while ((line = br.readLine()) != null) {
                 StringTokenizer st = new StringTokenizer(line);
                 int A = Integer.parseInt(st.nextToken());
                 int B = Integer.parseInt(st.nextToken());
