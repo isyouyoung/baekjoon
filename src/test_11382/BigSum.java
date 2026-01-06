@@ -10,13 +10,14 @@ public class BigSum {
     public static void main(String[] args) throws IOException {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-        String line = br.readLine();
 
-        StringTokenizer st = new StringTokenizer(line);
-        int A = Integer.parseInt(st.nextToken());
-        int B = Integer.parseInt(st.nextToken());
-        int C = Integer.parseInt(st.nextToken());
+        StringTokenizer st = new StringTokenizer(br.readLine());
+        int result = 0;
 
-        System.out.println(A+B+C);
+        while (st.hasMoreTokens()) {
+            result += Integer.parseInt(st.nextToken());
+        }
+
+        System.out.println(result);
     }
 }
