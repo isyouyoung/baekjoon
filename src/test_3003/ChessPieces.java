@@ -29,3 +29,11 @@ public class ChessPieces {
         System.out.print((origin[5] - pawn));
     }
 }
+
+// 보고 공부할것 for문 사용
+// int[] mine = new int[6];
+//for (int i = 0; i < 6; i++) {
+//    mine[i] = Integer.parseInt(st.nextToken());
+//    // 계산과 출력을 동시에!
+//    System.out.print((origin[i] - mine[i]) + " ");
+//}
