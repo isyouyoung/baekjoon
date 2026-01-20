@@ -9,8 +9,7 @@ public class StringLength {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = br.readLine();
-
-        System.out.println(line);
+        System.out.println(line.length());
     }
 }
 
