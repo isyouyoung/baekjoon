@@ -9,7 +9,15 @@ public class CodingIsPhysical {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = br.readLine();
-        System.out.println(line);
+
+        int a = Integer.parseInt(line);
+        int b = 4;
+        int c = a / b;
+
+        for (int i=0; i < c; i++) {
+            System.out.print("long ");
+        }
+        System.out.print("int");
 
 
     }
