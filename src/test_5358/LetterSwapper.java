@@ -10,19 +10,20 @@ public class LetterSwapper {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = "";
         StringBuilder sb = new StringBuilder();
+        String find = "ieIE";
+        String replace = "eiEI";
 
         while ((line = br.readLine()) != null) {
             for (char ch : line.toCharArray()) {
-                if (ch == 'i') {
-                    ch = 'e';
-                } else if ( ch == 'e') {
-                    ch = 'i';
-                } else if ( ch == 'I') {
-                    ch = 'E';
-                } else if ( ch == 'E') {
-                    ch = 'I';
+                int index = find.indexOf(ch);
+
+                if (index != -1) {
+                    // 대상에 포함되어 있다면 대응하는 바꿀 문자로 추가합니다.
+                    sb.append(replace.charAt(index));
+                } else {
+                    // 대상이 아니라면 원래 문자 그대로 추가합니다.
+                    sb.append(ch);
                 }
-                sb.append(ch);
             }
             sb.append("\n");
         }
