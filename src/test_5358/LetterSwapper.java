@@ -9,10 +9,9 @@ public class LetterSwapper {
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         String line = "";
+        StringBuilder sb = new StringBuilder();
 
         while ((line = br.readLine()) != null) {
-            String name = "";
-
             for (char ch : line.toCharArray()) {
                 if (ch == 'i') {
                     ch = 'e';
@@ -23,11 +22,11 @@ public class LetterSwapper {
                 } else if ( ch == 'E') {
                     ch = 'I';
                 }
-
-                name += ch;
+                sb.append(ch);
             }
-            System.out.println(name);
+            sb.append("\n");
         }
+        System.out.println(sb.toString());
     }
 }
 
