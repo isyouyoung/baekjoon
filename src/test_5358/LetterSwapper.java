@@ -3,22 +3,31 @@ package test_5358;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.util.StringTokenizer;
 
 public class LetterSwapper {
     public static void main(String[] args) throws IOException {
 
-        BufferedReader bf = new BufferedReader(new InputStreamReader(System.in));
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        String line = "";
 
-        while (true) {
-            String line = bf.readLine();
-            if (line == null || line.isEmpty()) { break; }
-            StringTokenizer st = new StringTokenizer(line);
-            String A = (st.nextToken());
-            String B = (st.nextToken());
-            System.out.println(A+B);
+        while ((line = br.readLine()) != null) {
+            String name = "";
+
+            for (char ch : line.toCharArray()) {
+                if (ch == 'i') {
+                    ch = 'e';
+                } else if ( ch == 'e') {
+                    ch = 'i';
+                } else if ( ch == 'I') {
+                    ch = 'E';
+                } else if ( ch == 'E') {
+                    ch = 'I';
+                }
+
+                name += ch;
+            }
+            System.out.println(name);
         }
-
     }
 }
 
