@@ -14,7 +14,7 @@ public class StringFirstLast {
             String word = br.readLine();
             System.out.print(word.charAt(0));
             int length = word.length();
-            System.out.print(word.charAt(length-1));
+            System.out.println(word.charAt(length-1));
         }
     }
 }
