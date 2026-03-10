@@ -12,9 +12,19 @@ public class PopularityDiff {
         String a = br.readLine();
 
         StringTokenizer st = new StringTokenizer(a);
-        int b = Integer.parseInt(st.nextToken());
-        int c = Integer.parseInt(st.nextToken());
-        int d =  Math.abs(b - c);
+        long b = Integer.parseInt(st.nextToken());
+        long c = Integer.parseInt(st.nextToken());
+        long d = Math.abs(b - c);
         System.out.println(d);
+
+        // Math.abs 는
+        // 절대값을 구하는 도구이다
+
+//        혹은 if문으로
+//          if (diff < 0) {
+//        diff = -diff;
+//        }
+//        System.out.println(diff);
+
     }
 }
